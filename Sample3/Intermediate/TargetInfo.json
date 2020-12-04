@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Sample",
-			"Path": "C:\\Users\\whdfk\\Desktop\\학교 수업 자료\\언리얼\\Sample\\Source\\Sample.Target.cs",
+			"Path": "F:\\unreal_Final\\unreal_final\\Sample3\\Source\\Sample.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "SampleEditor",
-			"Path": "C:\\Users\\whdfk\\Desktop\\학교 수업 자료\\언리얼\\Sample\\Source\\SampleEditor.Target.cs",
+			"Path": "F:\\unreal_Final\\unreal_final\\Sample3\\Source\\SampleEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
