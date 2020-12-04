@@ -25,6 +25,16 @@ class UAnimMontage;
 		P_NATIVE_BEGIN; \
 		P_THIS->OnAttackMontageEnded(Z_Param_Montage,Z_Param_binterrupted); \
 		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOutRadar) \
+	{ \
+		P_GET_UBOOL(Z_Param_radar); \
+		P_GET_UBOOL(Z_Param_diablo); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OutRadar(Z_Param_radar,Z_Param_diablo); \
+		P_NATIVE_END; \
 	}
 
 
@@ -37,6 +47,16 @@ class UAnimMontage;
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
 		P_THIS->OnAttackMontageEnded(Z_Param_Montage,Z_Param_binterrupted); \
+		P_NATIVE_END; \
+	} \
+ \
+	DECLARE_FUNCTION(execOutRadar) \
+	{ \
+		P_GET_UBOOL(Z_Param_radar); \
+		P_GET_UBOOL(Z_Param_diablo); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->OutRadar(Z_Param_radar,Z_Param_diablo); \
 		P_NATIVE_END; \
 	}
 

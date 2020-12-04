@@ -45,7 +45,22 @@ public:
 		USpringArmComponent* SpringArm;
 	UPROPERTY(EditAnyWhere, Category = Camera)
 		UCameraComponent* Camera;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
+		bool isRadar;
+	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly)
+		bool IsDiablomode;
 
+	UFUNCTION(BlueprintCallable)
+		void OutRadar(bool radar, bool diablo) {
+		if (diablo)
+		{
+			if (!radar)
+			{
+				GetController()->SetControlRotation(SpringArm->RelativeRotation);
+				SetControlMode(EControlMode::GTA);
+			}
+		}
+	}
 private:
 	void UpDown(float NewAxisValue);
 	void LeftRight(float newAxisValue);

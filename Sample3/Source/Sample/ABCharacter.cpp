@@ -41,6 +41,7 @@ AABCharacter::AABCharacter()
 	}
 
 	SetControlMode(EControlMode::GTA);
+	IsDiablomode = false;
 	ArmLengthSpeed = 3.0f;
 	ArmRotationSpeed = 10.0f;
 
@@ -72,8 +73,8 @@ void AABCharacter::SetControlMode(EControlMode NewControlMode)
 	case EControlMode::DIABLO:
 		//SpringArm->TargetArmLength = 800.0f;
 		//SpringArm->SetRelativeRotation(FRotator(-45.0f, 0.0f, 0.0f));
-		ArmLengthTo = 800.0f;
-		ArmRotationTo = FRotator(-45.0f, 0.0f, 0.0f);
+		ArmLengthTo = 1500.0f;
+		ArmRotationTo = FRotator(-90.0f, 0.0f, 0.0f);
 		SpringArm->bUsePawnControlRotation = false;
 		SpringArm->bInheritPitch = false;
 		SpringArm->bInheritRoll = false;
@@ -189,13 +190,23 @@ void AABCharacter::ViewChange()
 	switch (CurrentControlMode)
 	{
 	case EControlMode::GTA:
-		GetController()->SetControlRotation(GetActorRotation());
-		SetControlMode(EControlMode::DIABLO);
+		if (isRadar)
+		{
+			GetController()->SetControlRotation(GetActorRotation());
+			SetControlMode(EControlMode::DIABLO);
+			IsDiablomode = true;
+		}
 		break;
 	case EControlMode::DIABLO:
-		GetController()->SetControlRotation(SpringArm->RelativeRotation);
-		SetControlMode(EControlMode::GTA);
+		if (isRadar)
+		{
+			GetController()->SetControlRotation(SpringArm->RelativeRotation);
+			SetControlMode(EControlMode::GTA);
+			IsDiablomode = false;
+		}
 		break;
+
+
 	}
 }
 
