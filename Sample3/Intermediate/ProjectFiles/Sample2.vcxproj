@@ -282,6 +282,8 @@
     <ClInclude Include="..\..\Source\Sample\ABPawn.h"/>
     <ClCompile Include="..\..\Source\Sample\ABPlayerController.cpp"/>
     <ClInclude Include="..\..\Source\Sample\ABPlayerController.h"/>
+    <ClCompile Include="..\..\Source\Sample\Barghest.cpp"/>
+    <ClInclude Include="..\..\Source\Sample\Barghest.h"/>
     <None Include="..\..\Source\Sample\Sample.Build.cs"/>
     <ClCompile Include="..\..\Source\Sample\Sample.cpp"/>
     <ClInclude Include="..\..\Source\Sample\Sample.h"/>

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Sample2.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{5138451B-47B5-4BDE-AF64-86660F16DF78}</UniqueIdentifier>
+      <UniqueIdentifier>{19F8115F-A25B-4621-8CD6-85DA810A8B45}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Sample.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{E73C15A7-DED4-4BBD-BA86-556B966B411E}</UniqueIdentifier>
+      <UniqueIdentifier>{5A50D932-80C5-4D5B-A0C5-3D51D36BD225}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Sample">
-      <UniqueIdentifier>{B9CCB879-B07C-4BB8-AF00-66907F9F05DE}</UniqueIdentifier>
+      <UniqueIdentifier>{8EE252B6-FA34-44EA-A2E3-6A968A26383C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Sample\ABAnimInstance.cpp">
       <Filter>Source\Sample</Filter>
@@ -57,6 +57,12 @@
       <Filter>Source\Sample</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Sample\ABPlayerController.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\Barghest.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\Barghest.h">
       <Filter>Source\Sample</Filter>
     </ClInclude>
     <None Include="..\..\Source\Sample\Sample.Build.cs">
