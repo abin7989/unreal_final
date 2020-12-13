@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Sample.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{8531D460-666F-42A7-95AC-C14D97FBB9E3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Sample.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\SampleEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{6C72B598-F672-4EE8-9C84-A52CE6A0BD89}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Sample">
+      <UniqueIdentifier>{9410870B-69F3-4883-99C8-0BD0F6AA717C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Sample\ABAnimInstance.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\ABAnimInstance.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\ABCharacter.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\ABCharacter.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\ABGameMode.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\ABGameMode.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\ABPawn.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\ABPawn.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\ABPlayerController.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\ABPlayerController.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Sample\Sample.Build.cs">
+      <Filter>Source\Sample</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Sample\Sample.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\Sample.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sample\SampleGameModeBase.cpp">
+      <Filter>Source\Sample</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sample\SampleGameModeBase.h">
+      <Filter>Source\Sample</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
